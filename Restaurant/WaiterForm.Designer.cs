@@ -28,24 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Send = new Button();
+            button1 = new Button();
             textBox1 = new TextBox();
             SuspendLayout();
             // 
-            // Send
+            // button1
             // 
-            Send.Location = new Point(531, 44);
-            Send.Name = "Send";
-            Send.Size = new Size(75, 23);
-            Send.TabIndex = 0;
-            Send.Text = "Send";
-            Send.UseVisualStyleBackColor = true;
+            button1.Location = new Point(600, 27);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "Send";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(106, 44);
+            textBox1.Location = new Point(120, 28);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(389, 23);
+            textBox1.Size = new Size(432, 23);
             textBox1.TabIndex = 1;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -53,19 +54,18 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(717, 450);
             Controls.Add(textBox1);
-            Controls.Add(Send);
+            Controls.Add(button1);
             Name = "WaiterForm";
-            Text = "WaiterForm";
-            Load += Form1_Load;
+            Text = "Waiter Form";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private Button Send;
+        private Button button1;
         private TextBox textBox1;
     }
 }

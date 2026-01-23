@@ -37,9 +37,8 @@
             textBox1.Location = new Point(2, 1);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(786, 451);
+            textBox1.Size = new Size(796, 445);
             textBox1.TabIndex = 0;
-            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // KitchenForm
             // 
@@ -49,6 +48,7 @@
             Controls.Add(textBox1);
             Name = "KitchenForm";
             Text = "KitchenForm";
+            Load += KitchenForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }
