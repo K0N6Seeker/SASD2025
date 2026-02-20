@@ -36,7 +36,7 @@ public static class SDLx
     {
         var ret = SDL.GLSwapWindow(window);
 
-        if (!ret)
+        if(!ret)
         {
             var text = $"SDL Error: GLSwapWindow: window={window}";
             SDL.LogError(SDL.LogCategory.Application, text);

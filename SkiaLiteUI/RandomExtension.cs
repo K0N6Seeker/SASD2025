@@ -14,6 +14,10 @@ public static class RandomExtension
     {
         return new Vector(random.NextSingle() * max.X, random.NextSingle() * max.Y);
     }
+    public static SKColor NextColor(this Random rand)
+    {
+        return new SKColor((byte)rand.Next(256), (byte)rand.Next(256), (byte)rand.Next(256));
+    }
 }
 
 public static class Util

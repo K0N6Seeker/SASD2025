@@ -37,7 +37,7 @@ public class Example
     public void Run()
     {
         Thread.Sleep(100);
-        List<Namable> list = new() { new Cat(), new Dog(), new RatAdapter(new Rat()) };
+        List<Namable> list = new() {new Cat(), new Dog(), new RatAdapter(new Rat())};
         list.ForEach(n => Debug.Write(n.Name + ", "));
     }
 }
