@@ -18,7 +18,6 @@ public class GLWindow
     int clientY = 1080;
     Renderer renderer;
 
-
     public GLWindow(string title, int clientX, int clientY, Renderer renderer)
     {
         this.title = title;
@@ -35,7 +34,7 @@ public class GLWindow
         // 2. Create Window
         var window = SDLx.CreateWindow(title, clientX, clientY,
                                 SDL.WindowFlags.HighPixelDensity | 
-                                SDL.WindowFlags.OpenGL //| 
+                                SDL.WindowFlags.OpenGL // | 
                                 //SDL.WindowFlags.Borderless
                                 );
 

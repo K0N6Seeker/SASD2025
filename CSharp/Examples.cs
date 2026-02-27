@@ -31,7 +31,7 @@ public class Examples
         //p.X = 10;
 
         Console.WriteLine("abcdfdngjkdfgnfdkjnthj".Half());
-    }Half
+    }
     // 1. var
     void VarTest()
     {

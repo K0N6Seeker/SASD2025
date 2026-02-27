@@ -13,9 +13,8 @@ public abstract class Widget
     public List<Widget> Children { get; } = new();
     public virtual void Draw(SKCanvas canvas)
     {
-        // ID. 66102010231 Name นายก้องภพ เลาหะพิพัฒน์ชัย
         DrawSelf(canvas);
-        for (int i = 0; i < Children.Count; i++)
+        for(int i=0; i<Children.Count; i++)
             Children[i].Draw(canvas);
     }
     public abstract void DrawSelf(SKCanvas canvas);
@@ -33,8 +32,6 @@ public class RectWidget : Widget
         Position = origin;
         Size = size;
     }
-
-
 
     public override void DrawSelf(SKCanvas canvas)
     {
@@ -58,7 +55,8 @@ public class RectWidget : Widget
             widget.AddAction(new RectAnimation(widget));
 
         widget.Children.Add(new RectWidget(widget.Position, widget.Size / 4));
-        widget.Children.Add(new RectWidget(widget.Position + new Vector(100, 100), widget.Size / 4) { Color = SKColors.Green });
+        widget.Children.Add(new RectWidget(widget.Position + new Vector(100, 100),
+                                            widget.Size / 4) { Color = SKColors.Green });
         return widget;
     }
 }
